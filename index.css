@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 { font-size: 3.5em; }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2em; }
+p { font-size: 1.25em }
+ul { list-style: none; }
+li { font-size: 1.25em; }
+
+button {
+    background-color: blueviolet;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+button:hover {
+    background-color: rgb(101, 33, 1654);
+}
+
+.container {
+    margin: auto;
+    max-width: 1400px;
+}
+
+.accent-color {
+    color: blueviolet;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    color: blueviolet;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+header a {
+    color: black;
+    font-weight: bold;
+    padding: 5px 12px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+#hero {
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("media/hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+#we-are-proya .container {
+    padding: 200px 12px;
+    text-align: center;
+}
+
+#our-programs {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#our-programs .container {
+    padding: 150px 12px;
+}
+
+#our-programs h2 {
+    font-size: 3.2em;
+    margin-top: 0;
+}
+
+#our-programs p {
+    display: none;
+}
+
+#our-programs  .card {
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 50px;
+}
+
+.programs .card:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("media/front-end.jpg");
+}
+
+.programs .card:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("media/back-end.jpg");
+}
+
+.programs .card:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("media/python.jpg");
+}
+
+#features .container {
+    padding: 200px 12px;
+    text-align: center;
+}
+
+#features li {
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+#apply-now {
+    align-items: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#apply-now h2 {
+    font-size: 7vw;
+}
+
+#apply-now button {
+    font-size: 4vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    color: rgb(100, 100, 100);
+    margin: 0;
+    padding: 12px;
+}
+
+footer .container {
+    align-items: flex-end;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #we-are-proya .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #we-are-proya h2 {
+        margin-top: 0px;
+    }
+
+    #we-are-proya .img-container {
+        background-image: url("media/we-are-pro-ya.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #we-are-proya .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+        padding-left: 30px;
+        text-align: initial;
+        width: 50%;
+    }
+
+    #our-programs .programs {
+        display: flex;
+        justify-content: center;
+    }
+
+    #our-programs h2 {
+        font-size: 4em;
+    }
+
+    #our-programs .card {
+        background-color: rgba(50, 50, 50, 0.5);
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 100% 150px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        padding: 50px;
+    }
+
+    #our-programs h3 {
+        margin-top: 0;
+    }
+
+    #our-programs p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #features {
+        background-image: url("media/features.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #features .container {
+        text-align: initial;
+    }
+
+    #features ul {
+        margin-left: 100px;
+    }
+
+    #apply-now h2 {
+        font-size: 5em;
+    }
+
+    #apply-now button {
+        font-size: 2em;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #features {
+        background-position-x: calc(100vw - 800px);
+    }
+}
